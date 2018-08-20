@@ -25,4 +25,44 @@ const insertIcons = (name) => {
   });
 };
 
+
+const carouselNav = () => {
+  let i = 0;
+  let slides = document.querySelectorAll('.slide');
+  console.log(slides);
+  slides.forEach((slide) => {
+    slide.classList.add('hidden');
+  });
+  slides[i].classList.remove('hidden');
+  slides[i].classList.add('current');
+  let nextButton = document.querySelector('.next');
+  nextButton.addEventListener('click', () => {
+    i += 1;
+    if(i > slides.length - 1) {
+      i = 0;
+    }
+    let current = document.querySelector('.current');
+    current.classList.add('hidden');
+    current.classList.remove('current');
+    slides[i].classList.remove('hidden');
+    slides[i].classList.add('current');
+  });
+  let prevButton = document.querySelector('.prev');
+  prevButton.addEventListener('click', () => {
+    i -= 1;
+    if(i < 0) {
+      i = 2;
+    }
+    let current = document.querySelector('.current');
+    current.classList.add('hidden');
+    current.classList.remove('current');
+    slides[i].classList.remove('hidden');
+    slides[i].classList.add('current');
+  })
+}
+
+
+
+
 insertIcons(iconName);
+carouselNav();
