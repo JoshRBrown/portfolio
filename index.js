@@ -29,7 +29,6 @@ const insertIcons = (name) => {
 const carouselNav = () => {
   let i = 0;
   let slides = document.querySelectorAll('.slide');
-  console.log(slides);
   slides.forEach((slide) => {
     slide.classList.add('hidden');
   });
@@ -61,8 +60,55 @@ const carouselNav = () => {
   })
 }
 
+const insertDots = () => {
+  let slides = document.querySelectorAll('.slide');
+  let projectDiv = document.querySelector('.carousel');
+  let dots = document.createElement('div');
+  dots.classList.add('dots');
+  slides.forEach((slide) => {
+    let dotSpan = document.createElement('span');
+    dotSpan.classList.add('dot');
+    dots.appendChild(dotSpan);
+  });
+  projectDiv.appendChild(dots);
+};
+
+const showProject = () => {
+  let slides = document.querySelectorAll('.slide');
+  slides.forEach((slide) => {
+    slide.addEventListener('click', (event) => {
+      let currentSlide = event.target;
+      let currentPhoto = (currentSlide.getAttribute('src'));
+      let fullPage = document.createElement('div');
+      let fullPageImg = document.createElement('img');
+      let body = document.querySelector('body');
+      console.log(currentPhoto);
+
+      if(currentPhoto === './images/loginpage.png') {
+        let projectText = document.createElement('p');
+        
+        projectText.appendChild('CODER');
+        console.log('Coder');
+      }
+      if(currentPhoto == './images/themound.png') {
+        console.log('theMound')
+      }
+      if(currentPhoto === './images/login.png') {
+        console.log('Better Day');
+      }
+
+      fullPage.classList.add('select-project');
+      fullPageImg.setAttribute('src', currentPhoto);
+      fullPage.appendChild(fullPageImg);
+      projectText.appendChild(projectText);
+      body.appendChild(fullPage);
+    });
+  });
+};
 
 
 
 insertIcons(iconName);
 carouselNav();
+insertDots();
+showProject();
