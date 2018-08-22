@@ -8,18 +8,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 <body>
+  <a name="top"></a>
   <div class="container">
     <header class='nav-bar'>
       <div class='nav-left'>
-        <h2>Josh Brown</h2>
+        <a href="#top">
+          <h2>Josh Brown</h2>
+        </a>
       </div>
       <div class='nav-right'>
         <a href="#about"><h4>About</h4></a>
         <a href="#projects"><h4>Projects</h4></a>
-        <a href=""><h4>Contact</h4></a>
+        <a href="#contact"><h4>Contact</h4></a>
       </div>
     </header>
     <section class='blurb'>
@@ -74,8 +78,31 @@
         </div> -->
       </div>
     </section>
-    <!-- <section class="contact"></section> -->
+    <section class="contact">
+      <div class='contact-devices'> 
+        <a name="contact"></a>
+        <h4>
+          Contact Info
+        </h4>
+        <div class='devices'>
+          <div class='phone'>
+            <i class="fa fa-phone"></i>
+            <p class='hidden cell-text'>(404) 543-5427</p>
+          </div>
+          <div class="email">
+            <i class="fa fa-envelope"></i>
+            <p class="hidden email-text">jbrown016@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class='contact-right'></div>
+    </section>
   </div>
   <script src="./index.js"></script>
+  <footer>
+      <div><a href="" target='_blank'>Resume</a></div>
+      <div><a href="https://github.com/JoshRBrown" target='_blank'>GitHub</a></div>
+      <div><a href="https://www.linkedin.com/in/joshrbrown/" target='_blank'>LinkedIn</a></div>
+  </footer>
 </body>
 </html>
