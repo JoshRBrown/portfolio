@@ -113,8 +113,25 @@ const showProject = () => {
 };
 
 
+const cellDetails = () => {
+  let cellIcon = document.querySelector('.phone');
+  cellIcon.addEventListener('click', () => {
+    let cellText = document.querySelector('.cell-text');
+    cellText.classList.toggle('hidden');
+  })
+}
+
+const emailDetails = () => {
+  let emailIcon = document.querySelector('.email');
+  emailIcon.addEventListener('click', () => {
+    let cellText = document.querySelector('.email-text');
+    cellText.classList.toggle('hidden');
+  })
+}
 
 insertIcons(iconName);
 carouselNav();
 insertDots();
 showProject();
+cellDetails();
+emailDetails();
