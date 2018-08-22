@@ -82,6 +82,8 @@ const showProject = () => {
       let fullPage = document.createElement('div');
       let fullPageImg = document.createElement('img');
       let body = document.querySelector('body');
+      let nav = document.querySelector('.nav-bar');
+      nav.classList.toggle('hidden');
       console.log(currentPhoto);
       fullPage.classList.add('select-project');
       fullPageImg.setAttribute('src', currentPhoto);
