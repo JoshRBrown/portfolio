@@ -83,24 +83,30 @@ const showProject = () => {
       let fullPageImg = document.createElement('img');
       let body = document.querySelector('body');
       console.log(currentPhoto);
-
-      if(currentPhoto === './images/loginpage.png') {
-        let projectText = document.createElement('p');
-        
-        projectText.appendChild('CODER');
-        console.log('Coder');
-      }
-      if(currentPhoto == './images/themound.png') {
-        console.log('theMound')
-      }
-      if(currentPhoto === './images/login.png') {
-        console.log('Better Day');
-      }
-
       fullPage.classList.add('select-project');
       fullPageImg.setAttribute('src', currentPhoto);
       fullPage.appendChild(fullPageImg);
-      projectText.appendChild(projectText);
+
+      if(currentPhoto === './images/loginpage.png') {
+        let projectText = document.createElement('p');
+        let text = document.createTextNode('CODER');
+        projectText.appendChild(text);
+        fullPage.appendChild(projectText);
+      }
+      if(currentPhoto == './images/themound.png') {
+        let projectText = document.createElement('p');
+        let text = document.createTextNode('The Mound');
+        projectText.appendChild(text);
+        fullPage.appendChild(projectText);
+      }
+      if(currentPhoto === './images/login.png') {
+        console.log('Better Day');
+        let projectText = document.createElement('p');
+        let text = document.createTextNode('Better Day');
+        projectText.appendChild(text);
+        fullPage.appendChild(projectText);
+      }
+
       body.appendChild(fullPage);
     });
   });
