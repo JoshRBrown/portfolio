@@ -267,9 +267,29 @@ a {
   margin-left: 15%;
 }
 
-.select-project img {
-  height: 80%;
+.exit {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 80%;
+}
+
+.select-project img {
+  height: auto;
+  width: 60%;
+}
+
+.exit-button {
+  font-size: 5rem;
+}
+
+.select-project p {
+  width: 70%;
+}
+
+.select-project a {
+  display: inline;
 }
 
 .contact {
@@ -316,7 +336,7 @@ a {
 }
 
 footer {
-  height: 60px;
+  height: 50px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -335,7 +355,7 @@ footer div {
 }
 
 footer div a {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   text-decoration: none;
   color: black;
 }
