@@ -29,6 +29,7 @@ a {
   z-index: 9999;
 }
 .nav-left {
+  min-width: 50%;
   width: 50%;
   height: 100%;
   display: flex;
@@ -37,7 +38,12 @@ a {
   align-items: center;
 }
 
+.nav-left a{
+  width: 100%;
+}
+
 .nav-right {
+  min-width: 50%;
   width: 50%;
   height: 100%;
   display: flex;
@@ -54,6 +60,7 @@ a {
 }
 
 .nav-left h2 {
+  width: 100%;
   padding-left: 5%;
   color: white;
   height: auto;
@@ -79,10 +86,13 @@ a {
   align-items: flex-end;
   justify-content: center;
   height: auto;
+  min-width: 100%;
   width: 100%;
 }
 .welcome h1 {
+  text-align: center;
   padding-right: 25%;
+  min-width: 100%;
 }
 
 .name-on-header {
@@ -97,6 +107,8 @@ a {
 
 .name-on-header h1 {
   padding-left: 15%;
+  min-width: 100%;
+  text-align: center;
 }
 
 .about {
