@@ -88,7 +88,7 @@ const showProject = () => {
       let xButton = document.createElement('icon');
       xButton.classList.add('fa');
       xButton.classList.add('fa-times');
-      xButton.classList.add('exit-button');
+      xButton.classList.add('fa-2x');
       // let xButtonText = document.createTextNode(&#10008;)
       // xButton.appendChild(xButtonText);
       nav.classList.toggle('hidden');
