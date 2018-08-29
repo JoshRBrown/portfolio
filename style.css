@@ -359,6 +359,8 @@ a {
 }
 
 .devices div {
+  display: flex;
+  justify-content: flex-start;
   font-size: 4rem;
   margin-bottom: 5%;
   display: flex;
