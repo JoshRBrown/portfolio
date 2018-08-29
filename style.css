@@ -291,7 +291,7 @@ a {
   height: auto; 
   position: fixed;
   margin-left: 5%;
-  margin-top: 5%; 
+  margin-top: 5px; 
   top: 0; 
   left: 0; 
   display: flex;
@@ -304,6 +304,7 @@ a {
   padding-top: 3%;
   /* justify-content: space-around; */
   padding-bottom: 10%;
+  max-height: 80%;
 }
 
 .slide img {
