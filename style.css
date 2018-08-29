@@ -300,6 +300,7 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   align-items: center;
+  padding-top: 3%;
   /* justify-content: space-around; */
 }
 
