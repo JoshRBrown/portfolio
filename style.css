@@ -1,6 +1,6 @@
-/* * {
+* {
   border: 1px solid black;
-} */
+}
 
 html, body {
   height: auto;
@@ -264,11 +264,7 @@ a {
   align-items: center;
 }
 
-.contact {
-  height: 400px;
-  width: 100%;
-  background: black;
-}
+
 
 .hidden {
   display: none;
@@ -350,8 +346,8 @@ a {
 
 .contact-devices {
   height: 100%;
-  min-width: 100%;
-  margin-left: 5%;
+  min-width: 97%;
+  margin-left: 3%;
 }
 
 .contact-devices h4 {
